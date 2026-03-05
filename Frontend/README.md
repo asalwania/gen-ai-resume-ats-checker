@@ -1,16 +1,57 @@
-# React + Vite
+# YT-GENAI Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React frontend for the YT-GENAI project, built with Vite and SCSS. It provides users with an interface to manage AI-generated interviews.
 
-Currently, two official plugins are available:
+## 🚀 Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Prerequisites
 
-## React Compiler
+- **Node.js**: `v24.13.1` (Recommended)
+- **Backend**: Ensure the [Backend](../Backend/README.md) server is running for API requests to work.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Setup Instructions
 
-## Expanding the ESLint configuration
+1. **Navigate to the Frontend directory**:
+   ```bash
+   cd YT-GENAI/Frontend
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+
+### Running the Application
+
+- **Development Mode**:
+  ```bash
+  npm run dev
+  ```
+- **Build for Production**:
+  ```bash
+  npm run build
+  ```
+- **Preview Production Build**:
+  ```bash
+  npm run preview
+  ```
+
+## 🛠️ Tech Stack
+
+- **Framework**: React 19 (Vite)
+- **Routing**: React Router 7
+- **Styling**: SCSS (Sass)
+- **API Client**: Axios
+
+## 📂 Project Structure
+
+- `src/features/auth`: Authentication-related components and logic.
+- `src/features/interview`: Interview generation and viewing pages.
+- `src/app.routes.jsx`: Main routing configuration.
+- `src/assets`: Static assets like images and global styles.
+
+## 🎨 Features
+
+- **User Authentication**: Secure Login/Signup.
+- **AI Interview Generation**: Create interviews using Gemini AI.
+- **Responsive Design**: Optimized for various screen sizes using SCSS.
